@@ -1,0 +1,137 @@
+html {
+
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: darkcyan;
+    padding: 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.wrapper >* {
+    padding: 1rem;
+    flex-grow: 1;
+    flex-basis: 100%;
+    background-color: white;
+}
+
+.header {
+    background-color: gold;
+}
+
+.nav-vanhempi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.nav-vanhempi >* {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 1rem;
+}
+
+.main {
+    background-color: darkorange;
+}
+
+.aside-1 {
+    background-color: mediumseagreen;
+}
+
+.aside-2 {
+    background-color: seagreen;
+}
+
+.footer {
+    background-color: lightgreen;
+}
+
+  .navipalkki {
+      padding: 0;
+  }
+
+  .somenavipalkki {
+    margin: 0 -1rem -1rem -1rem;
+  }
+
+.some {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.some >* {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 1rem;
+}
+
+.facebook {
+background-color: #3B5999;
+text-align: center;
+color: white;
+}
+
+.twitter {
+background-color:#55ACEF;
+text-align: center;
+color: white;
+}
+
+.email {
+background-color: #777777;
+text-align: center;
+color: white;
+}
+  
+  .navipalkki li {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: white;
+    border: 0.2px;
+    border-style: solid;
+    border-color:grey;
+  }
+
+  p {
+    padding-bottom: 1rem;
+  }
+
+
+
+@media screen and (min-width: 426px) {
+    .wrapper {
+      flex-direction: row;
+    }
+    .aside-1 {
+        flex-basis: auto;
+    }
+    .aside-2 {
+        flex-basis: auto;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+      .aside-1 {
+          order: 1;
+          flex-basis: 0px;
+      }
+      .main {
+          order: 2;
+          flex-basis: 400px;
+      }
+      .aside-2 {
+          order: 3;
+          flex-basis: 0px;
+      }
+      .footer {
+          order: 4;
+      }
+    }
